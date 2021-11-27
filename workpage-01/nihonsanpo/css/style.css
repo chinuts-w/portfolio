@@ -1,0 +1,636 @@
+@charset "UTF-8";
+
+/*_________________________________
+common style
+_________________________________*/
+body{
+  background-color: rgb(43 62 46 / 94%);
+  font-family: 'TsukuARdGothic-Regular',sans-serif;
+}
+
+a{
+  color: #FFFFFF;
+}
+
+ul,
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h2{
+  font-size: 28px;
+  margin: 40px auto;
+  color: #FFFFFF;
+  font-weight: lighter;
+  border-bottom: solid 1px white;
+  width: fit-content;
+}
+
+button{
+  padding: 10px;
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    margin: 0 10px;
+    transition: all 500ms 0s ease;
+}
+
+button:hover{
+  cursor: pointer;
+  background: #9e9526;
+  color: #fff;
+}
+
+/*_________________________________
+header style
+_________________________________*/
+.logo{
+  padding: 18px 0;
+  text-align: center;
+}
+
+.logo img{
+  width: 60px;
+}
+
+nav{
+  height: 86px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.nav-li{
+  display: flex;
+  margin: 0 30px 0 0;
+}
+
+.nav-li li{
+  margin: 0 30px 0 0;
+}
+
+/*_________________________________
+mainvisual style
+_________________________________*/
+#mainvisual{
+  background: url(../img/main-japan02.jpg)no-repeat;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*_________________________________
+purpose style
+_________________________________*/
+#purpose{
+  height: auto;
+  margin: 40px auto;
+}
+
+#purpose-all{
+  display: flex;
+  justify-content: center;
+}
+
+.area-01,
+.area-02,
+.area-03{
+  width: 300px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  margin: 20px;
+}
+
+.area-01 a,
+.area-02 a,
+.area-03 a{
+  color: #000000;
+}
+
+.area-01 button,
+.area-02 button,
+.area-03 button{
+  display: block;
+  margin: 20px auto;
+  font-size: 22px;
+  width: auto;
+}
+
+.area-01 p,
+.area-02 p,
+.area-03 p{
+  text-align: center;
+}
+
+/*_________________________________
+rank style
+_________________________________*/
+#rank{
+  height: 510px;
+  padding: 0 50px;
+  display: block;
+  background: rgba(255,255,255,0.5);
+}
+
+#rank h2{
+  padding-top: 40px;
+}
+
+.rank-li{
+  display: flex;
+  justify-content: center;
+}
+
+.rank-li li{
+  counter-increment: rank;
+  width: 200px;
+}
+
+.rank-li li+li{
+  margin: 0 0 0 1rem;
+}
+
+.rank-li li::before {
+  content: "第"counter(rank) "位";
+  color: #FFFFFF;
+  line-height: normal;
+  font-size: 25px;
+}
+
+.text-box:hover{
+  color: black;
+}
+
+.address{
+  font-size: 14px;
+}
+
+.title{
+  font-size: 18px;
+}
+
+.rank-morebtn{
+  display: block;
+  width: auto;
+  margin: 40px auto;
+}
+
+/*_________________________________
+popular style
+_________________________________*/
+#popular{
+  height:850px;
+  background-color: rgb(93 119 97 / 94%);
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 25px;
+}
+
+#popular h2{
+  padding-top: 40px;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+.slider{
+  margin: 0 auto;
+  max-width: 1020px;
+  overflow: visible;
+}
+
+.img-box{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.slick-slide{
+  margin: 0 5px;
+}
+
+.slick-slide img{
+  height: 500px;
+  width: 100%;
+}
+
+.slick-slide p{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.slick-slide img,
+.slick-slide p{
+  position: relative;
+}
+
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 100px;
+  z-index: 2;
+  transform: translate(0,-50%);
+}
+
+.slick-arrow:hover{
+  cursor: pointer;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+.slick-active{
+  opacity: 1;
+}
+
+.popular-morebtn{
+  display: block;
+  width: auto;
+  margin: 40px auto;
+}
+
+/*_________________________________
+j-map style
+_________________________________*/
+#j-map{
+  height: 100vh;
+}
+
+.map-area{
+  height: 80%;
+}
+
+.map-img{
+  display: flex;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.map-img img{
+  margin: auto;
+  height: 100%;
+}
+
+.map-img button{
+  position: absolute;
+  width: fit-content;
+  font-size: 2vh;
+}
+.map01{
+  top: 8%;
+  left: 48%;
+}
+
+.map02{
+  top: 32%;
+  left: 58%;
+}
+
+.map03{
+  top: 60%;
+  left: 56%;
+}
+
+.map04{
+  top: 42%;
+  left: 46%;
+}
+
+.map05{
+  top: 77%;
+  left: 47%;
+}
+
+.map06{
+  top: 86%;
+  left: 40%;
+}
+
+.map07{
+  top: 58%;
+  left: 36%;
+}
+
+.map08{
+  top: 75%;
+  left: 24%;
+}
+
+.map09{
+  top: 78%;
+  left: 60%;
+}
+
+/*_________________________________
+search-list style
+_________________________________*/
+#search-list{
+  background-color: #D3D3D3;
+  height: 380px;
+  width: 100%;
+  font-family: 'TsukuARdGothic-Regular',sans-serif;
+}
+
+.fa-wordpress{
+  font-size: 50px;
+}
+
+.list03 {
+  padding-top:75px;
+  text-align: center;
+}
+
+.list03 ul{
+  display: inline-block;
+  margin: 20px 30px;
+  text-align: left;
+}
+
+.list03 ul li{
+  margin-bottom: 10px;
+}
+
+.list03 a{
+  color: #000000;
+}
+
+/*_________________________________
+footer style
+_________________________________*/
+footer{
+  height: fit-content;
+  margin: 30px 0;
+}
+
+.foot-logo{
+  width: 40px;
+  margin: 10px auto 0;
+}
+
+small{
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+
+
+
+/*****_________________________________
+
+mobile style
+
+_________________________________*****/
+@media screen and (max-width:480px){
+  
+  /*_________________________________
+  common style
+  _________________________________*/
+  body{
+    width: 100%;
+  }
+
+  button {
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    border-radius: 3px;
+    transition: .4s;
+    background-color: unset;
+  }
+
+  /*_________________________________
+  hesder style
+  _________________________________*/
+  .logo{
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  nav{
+    display: none;
+  }
+
+
+
+  .menu-btn{
+    display: block;
+    padding: 30px;
+  }
+
+  .fa-bars{
+    font-size: 8vw;
+    color: #FFFFFF;
+  }
+
+  .overlay{
+    width: 100%;
+    height: 360px;
+    background-color: black;
+    z-index: 999;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    display: none;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .overlay-ward li{
+    padding: 10px;
+  }
+
+  .search-icon{
+    display: block;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-left: 90px;
+    margin-top: 24px;
+  }
+
+
+
+
+  /*_________________________________
+  mainvisual style
+  _________________________________*/
+  #mainvisual {
+    height: 50vh;
+  }
+
+  /*_________________________________
+  purpose style
+  _________________________________*/
+  #purpose-all{
+    display: block;
+  }
+
+  .area-01,
+  .area-02,
+  .area-03{
+    background-color: unset;
+    margin: auto;
+  }
+
+  .area-01 p,
+  .area-02 p,
+  .area-03 p{
+    color: #fff;
+    display: none;
+  }
+
+  .area-01 button,
+  .area-02 button,
+  .area-03 button{
+    margin: 10px auto;
+    font-size: 18px;
+  }
+
+  /*_________________________________
+  rank style
+  _________________________________*/
+  #rank{
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .rank-li{
+    display: block;
+  }
+
+  .rank-li li{
+    width: unset;
+  }
+
+  .rank-li li+li{
+    margin: unset;
+  }
+
+  .rank-li li:nth-child(n + 4){
+    display: none;
+  }
+  
+  .address{
+    display: none;
+  }
+
+  .title{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .rank-morebtn{
+    margin: 40px auto 0;
+  }
+
+  /*_________________________________
+  popular style
+  _________________________________*/
+  #popular{
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .img-box{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .slick-slide img{
+    height: 200px;
+    width: 100%;
+  }
+
+  .slick-slide p{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  .popular-morebtn{
+    margin: 0 auto;
+  }
+
+  /*_________________________________
+  j-map style
+  _________________________________*/
+  #j-map{
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  #j-map img{
+    display: none;
+  }
+
+  .map-img{
+    display: block;
+  }
+
+  .map-img button{
+    position: unset;
+    margin: 10px auto 0;
+    width: 60%;
+  }
+
+  .map01,
+  .map02,
+  .map03,
+  .map04,
+  .map05,
+  .map06,
+  .map07,
+  .map08,
+  .map09{
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 0;
+  }
+
+  /*_________________________________
+  search-list style
+  _________________________________*/
+  #search-list{
+    height: fit-content;
+    font-size: 8px;
+  }
+
+  .list03 {
+    display: flex;
+    padding: 0;
+    text-align: unset;
+  }
+  
+  .list03 ul{
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .list03 ul li{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  /*_________________________________
+  footer style
+  _________________________________*/
+  .foot-logo{
+    display: none;
+  }
+}

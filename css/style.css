@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*___________________________________
+base style
+___________________________________*/
+body{
+  font-size: 18px;
+  background-size: 20px 20px;
+	background-color: #cdcdd47d;
+  background: url(../img/white-nuri.jpg)no-repeat center/cover;
+  font-family: 'Quicksand','TsukuARdGothic-Regular', sans-serif;
+}
+
+a{
+  display: block;
+  color: #000;
+}
+
+ul,
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*___________________________________
+common style
+___________________________________*/
+
+.container{
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: block;
+    position: relative;
+  }
+}
+
+.contents-container{
+  padding: 0 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .contents-container {
+    padding: 0 1rem;
+  }
+}
+
+.content-title{
+  text-align: center;
+  padding: 60px 0 0;
+  border-bottom: solid 1px;
+  font-size: 30px;
+}
+
+/*___________________________________
+nav style
+___________________________________*/
+.nav-area{
+  height: 100vh;
+  width: 12%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 480px) {
+  .nav-area {
+    display: none;
+  }
+}
+
+.side-menu{
+  text-align: center;
+  padding: 80px 0 0;
+}
+
+.side-menu > li{
+  margin: 40px 0 0;
+  list-style: none;
+}
+
+/*___________________________________
+main style
+___________________________________*/
+.main{
+  display: block;
+  width: 88%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    width: 100%;
+  }
+}
+
+/*___________________________________
+home style
+___________________________________*/
+.home-area{
+  height: 100vh;
+  position: relative;
+}
+
+.home-visual{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*___________________________________
+profile style
+___________________________________*/
+.profile-block{
+  display: flex;
+  height: 600px;
+  background-color: #FFF;
+  justify-content: center;
+  padding: 0 100px;
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-block {
+    display: block;
+    height: auto;
+    padding: 40px 3rem;
+  }
+}
+
+.profile-text{
+  margin: auto;
+}
+
+.profile-text dl{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-text dl {
+    width: 100%;
+    padding: 0;
+    margin-top: 2rem;
+    display: block;
+  }
+}
+
+.profile-text dt{
+  padding: 0 0 20px;
+  width: 30%;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-text dt {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.profile-text dd{
+  font-size: 12px;
+  margin: 0 0 20px;
+  width: 70%;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-text dd {
+    width: 100%;
+  }
+}
+
+.profile-img{
+  height: fit-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-img {
+    text-align: center;
+  }
+}
+
+/*___________________________________
+work-area style
+___________________________________*/
+.work-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  .work-list {
+    display: block;
+  }
+}
+
+.work{
+  width: 30%;
+}
+
+@media screen and (max-width: 480px) {
+  .work {
+    width: 100%;
+  }
+}
+
+.work-caption{
+  margin: 10px 0 50px;
+  text-align: center;
+}
+

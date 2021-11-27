@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>日本散歩</title>
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ </head>
+ <body>
+   <header>
+    <div class="logo">
+      <img src="./img/logo-w.png" alt="">
+    </div>
+    <nav>
+      <ul class="nav-li">
+        <li><a href="">国内旅行</a></li>
+        <li><a href="">日帰りツアー</a></li>
+        <li><a href="">遊び・体験</a></li>
+        <li><a href="">新規登録・ログイン</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+      <form method="get" action="#" class="search_container">
+        <input type="text" size="25" placeholder="　キーワード検索">
+        <input type="submit" value="検索">
+      </form>
+    </nav>
+   </header>
+   <main>
+     <section id="mainvisual">
+       <div></div>
+     </section>
+     <section id="purpose">
+       <h2>目的別に探す</h2>
+       <div id="purpose-all">
+         <div class="area-01">
+           <img src="./img/kimono-walk.jpg" alt="">
+           <button class="">日本旅行</button>
+           <p>宿でくつろぎ、観光を楽しむ</p>
+         </div>
+         <div class="area-02">
+           <img src="./img/toyosu-sushi.jpg" alt="">
+           <button class="">日帰りツアー</button>
+           <p>貴重な体験を1日で巡る、贅沢ツアー</p>
+         </div>
+         <div class="area-03">
+           <img src="./img/made-class02.jpg" alt="">
+           <button class="">遊び・体験</button>
+           <p>様々な日本の文化に触れ合える</p>
+         </div>
+       </div>
+     </section>
+
+     <section id="rank">
+       <h2>ランキングで探す</h2>
+       <div id="rank-area">
+         <ul class="rank-li">
+           <li>
+             <a href=""><img src="./img/candle.jpg" alt=""></a>
+             <a class="text-box" href=""><p class="address">東京都/港区</p><p class="title">クリスマスキャンドル作り体験</p></a>
+           </li>
+           <li>
+             <a href=""><img src="./img/hand-class02.jpg" alt=""></a>
+             <a class="text-box" href=""><p class="address">東京都/世田谷区</p><p class="title">天然素材で作るクリスマスリース</p></a>
+           </li>
+           <li>
+             <a href=""><img src="./img/ski.jpg" alt=""></a>
+             <a class="text-box" href=""><p class="address">北海道/札幌市</p><p class="title">リフト券付き、蟹食べ放題プラン</p></a>
+           </li>
+           <li>
+             <a href=""><img src="./img/wool.jpg" alt=""></a>
+             <a class="text-box" href=""><p class="address">神奈川県/横浜市</p><p class="title">毛糸染めから作るマフラー作り体験</p></a>
+           </li>
+           <li>
+             <a href=""><img src="./img/tougei.jpg" alt=""></a>
+             <a class="text-box" href=""><p class="address">東京都/千代田区</p><p class="title">都内美術館巡り・陶芸体験付きツアー</p></a>
+           </li>
+         </ul>
+         <button class="rank-morebtn" type="button" name="button">もっと詳しく見る</button>
+       </div>
+     </section>
+     <section id="popular">
+       <h2>おすすめで探す</h2>
+       <div class="slider">
+         <div class="img-box">
+           <a href="">
+             <img src="./img/dorayaki.jpg" alt="">
+             <p>《あんこ好き必見！》人気どら焼き店巡り・どら焼き作り体験ツアー</p>
+           </a>
+         </div>
+         <div class="img-box">
+           <a href="">
+             <img src="./img/okinawa.jpg" alt="">
+             <p>限定プラン‼︎《年末年始》年越しは沖縄でゆったり贅沢旅行</p>
+           </a>
+         </div>
+         <div class="img-box">
+           <a href="">
+             <img src="./img/icingcookie.jpg" alt="">
+             <p>残りわずか‼︎《親子で参加》クリスマスアイシングクッキー作り体験</p>
+           </a>
+         </div>
+         <div class="img-box">
+           <a href="">
+             <img src="./img/nawa-03.jpg" alt="">
+             <p>《お正月恒例企画》毎年人気のしめ縄作り体験</p>
+           </a>
+         </div>
+       </div>
+       <button class="popular-morebtn" type="button" name="button">もっと詳しく見る</button>
+     </section>
+     <section id="j-map">
+      <h2>場所で探す</h2>
+      <div class="map-area">
+        <div class="map-img">
+          <img src="./img/map-japan.png" alt="">
+          <button class="map01">北海道エリア</button>
+          <button class="map02">東北エリア</button>
+          <button class="map03">関東エリア</button>
+          <button class="map04">中部エリア</button>
+          <button class="map05">関西エリア</button>
+          <button class="map06">四国エリア</button>
+          <button class="map07">中国エリア</button>
+          <button class="map08">九州エリア</button>
+          <button class="map09">沖縄エリア</button>
+        </div>
+      </div>
+     </section>
+     <section id="search-list">
+       <div class="list03">
+       　<ul class="s-list-01">
+          <li><a href="">＞店舗検索</a></li>
+          <li><a href="">＞旅行</a></li>
+          <li><a href="">＞日帰りツアー</a></li>
+          <li><a href="">＞遊び・体験</a></li>
+          <li><a href="">＞簡単見積もり</a></li>
+       　</ul>
+       　<ul class="s-list-02">
+          <li><a href="">＞全てのプランから探す</a></li>
+          <li><a href="">＞目的別に探す</a></li>
+          <li><a href="">＞ランキングで探す</a></li>
+          <li><a href="">＞おすすめで探す</a></li>
+          <li><a href="">＞場所で探す</a></li>
+       　</ul>
+       　<ul class="s-list-03">
+          <li><a href="">＞日本散歩について</a></li>
+          <li><a href="">＞企業情報</a></li>
+          <li><a href="">＞経営理念</a></li>
+          <li><a href="">＞お問い合わせ</a></li>
+          <li><a href="">＞採用情報</a></li>
+       　</ul>
+     </div>
+     </section>
+   </main>
+   <footer>
+     <small>© Copylight 2021 日本散歩</small>
+     <div class="foot-logo">
+       <img src="./img/logo-w.png" alt="">
+     </div>
+   </footer>
+   <script type="text/javascript" src="./js/base.js"></script>
+ </body>
+</html>
