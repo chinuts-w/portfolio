@@ -1,15 +1,22 @@
 @charset "UTF-8";
 
 /*___________________________________
-base style
+common style
 ___________________________________*/
 body{
   font-size: 18px;
   background-size: 20px 20px;
 	background-color: #cdcdd47d;
-  background: url(../img/white-nuri.jpg)no-repeat center/cover;
-  font-family: 'Quicksand','TsukuARdGothic-Regular', sans-serif;
-}
+	/*background-image:
+	linear-gradient(45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
+	 transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
+	 transparent 75%, transparent),
+	linear-gradient(-45deg, rgba(56, 142, 60, 0.5) 25%, transparent 25%,
+	 transparent 50%, rgba(56, 142, 60, 0.5) 50%, rgba(56, 142, 60, 0.5) 75%,
+	 transparent 75%, transparent);*/
+   background: url(../img/white-nuri.jpg)no-repeat center/cover;
+   font-family: 'Quicksand','TsukuARdGothic-Regular', sans-serif;
+ }
 
 a{
   display: block;
@@ -23,36 +30,15 @@ li{
   list-style: none;
 }
 
-/*___________________________________
-common style
-___________________________________*/
-
-.container{
-  display: flex;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    display: block;
-    position: relative;
-  }
-}
-
-.contents-container{
-  padding: 0 100px;
-}
-
-@media screen and (max-width: 480px) {
-  .contents-container {
-    padding: 0 1rem;
-  }
-}
-
-.content-title{
+h2{
   text-align: center;
   padding: 60px 0 0;
   border-bottom: solid 1px;
   font-size: 30px;
+}
+
+.container{
+  display: flex;
 }
 
 /*___________________________________
@@ -60,22 +46,16 @@ nav style
 ___________________________________*/
 .nav-area{
   height: 100vh;
-  width: 12%;
+  width:12%;
   background-color: rgba(255,255,255,0.5);
 }
 
-@media screen and (max-width: 480px) {
-  .nav-area {
-    display: none;
-  }
-}
-
-.side-menu{
+#menu-area{
   text-align: center;
   padding: 80px 0 0;
 }
 
-.side-menu > li{
+#menu-area li{
   margin: 40px 0 0;
   list-style: none;
 }
@@ -90,21 +70,21 @@ ___________________________________*/
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 480px) {
-  .main {
-    width: 100%;
-  }
+#home-area,
+#profile-area,
+#work-area{
+  margin: 0 100px;
 }
 
 /*___________________________________
 home style
 ___________________________________*/
-.home-area{
+#home-area{
   height: 100vh;
   position: relative;
 }
 
-.home-visual{
+#home-visual img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,7 +94,7 @@ ___________________________________*/
 /*___________________________________
 profile style
 ___________________________________*/
-.profile-block{
+#pro-block{
   display: flex;
   height: 600px;
   background-color: #FFF;
@@ -123,14 +103,6 @@ ___________________________________*/
   font-size: 18px;
   opacity: 0.8;
   margin-top: 60px;
-}
-
-@media screen and (max-width: 480px) {
-  .profile-block {
-    display: block;
-    height: auto;
-    padding: 40px 3rem;
-  }
 }
 
 .profile-text{
@@ -145,25 +117,9 @@ ___________________________________*/
   padding-left: 60px;
 }
 
-@media screen and (max-width: 480px) {
-  .profile-text dl {
-    width: 100%;
-    padding: 0;
-    margin-top: 2rem;
-    display: block;
-  }
-}
-
 .profile-text dt{
   padding: 0 0 20px;
   width: 30%;
-}
-
-@media screen and (max-width: 480px) {
-  .profile-text dt {
-    width: 100%;
-    padding: 0;
-  }
 }
 
 .profile-text dd{
@@ -172,21 +128,9 @@ ___________________________________*/
   width: 70%;
 }
 
-@media screen and (max-width: 480px) {
-  .profile-text dd {
-    width: 100%;
-  }
-}
-
-.profile-img{
+#profile-img{
   height: fit-content;
   margin: auto;
-}
-
-@media screen and (max-width: 480px) {
-  .profile-img {
-    text-align: center;
-  }
 }
 
 /*___________________________________
@@ -199,24 +143,11 @@ ___________________________________*/
   margin: 60px 0 0;
 }
 
-@media screen and (max-width: 480px) {
-  .work-list {
-    display: block;
-  }
-}
-
 .work{
   width: 30%;
-}
-
-@media screen and (max-width: 480px) {
-  .work {
-    width: 100%;
-  }
 }
 
 .work-caption{
   margin: 10px 0 50px;
   text-align: center;
 }
-
