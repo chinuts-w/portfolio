@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-  <title>日本散歩 | 詳細</title>
-
-  <!-- style sheets -->
-  <link rel="stylesheet" href="../css/reset.css">
-
-  <!-- fontaewsome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
-  <link rel="stylesheet" href="../css/lower-style.css">
-</head>
-<body>
-  <div id="container">
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>作品ページ01</title>
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/style.css">
+ </head>
+ <body>
+   <div id="container">
     <header>
-      <button id="back-btn" input type="button" onclick="window.history.back();" value="直前のページに戻る">
+      <button id="back-btn"　input type="button" onclick="window.history.back();" value="直前のページに戻る">
         -back-
       </button>
     </header>
-    <main id="main-area" class="main-container">
-      <h1 class="lower-page-title">日本散歩</h1>
-      <ul id="contents" class="contents-overview">
-        <li>国内専門の旅行代理店</li>
-        <li>「日本を感じて、知って、味わって、もっと身近に」がコンセプト</li>
-        <li>旅行・日帰りツアー・体験の３つから探す事ができる</li>
-        <li>旅行は１泊から長期滞在のプランまで幅広く提案をしており、<br class="no-sp" aria-hidden="true">日帰りツアーでは充実した1日が過ごせる様々なイベントを用意、<br class="no-sp" aria-hidden="true">当日予約も可能な体験では旅先での思い出作りや、<br class="no-sp" aria-hidden="true">親子で楽しむ体験教室が人気となっている</li>
-        <li>日本文化を身近に感じてもらえる工芸作り体験や、<br class="no-sp" aria-hidden="true">クリスマス・バレンタインなど季節行事に合わせたイベントもある</li>
-      </ul>
-      <dl id="item-area" class="item-area">
+    <main id="main-area">
+      <h2>日本散歩</h2>
+      <p id="contents">
+        ・国内専門の旅行代理店<br>
+        ・「日本を感じて、知って、味わって、もっと身近に」がコンセプト<br>
+        ・ターゲットは、20代〜40代の日本文化に興味がある方や、<br>
+        　休日に日帰りでお出かけしたい方、小さいお子様とのお出かけ先を探している方。<br>
+        ・旅行・日帰りツアー・体験の３つから探す事ができる。<br>
+        ・旅行は１泊から長期滞在のプランまで幅広く提案をしており、<br>
+        　日帰りツアーでは充実した1日が過ごせる様々なイベントを用意、<br>
+        　当日予約も可能な体験では旅先での思い出作りや、<br>
+        　親子で楽しむ体験教室が人気となっている。<br>
+        ・日本文化を身近に感じてもらえる工芸作り体験や、クリスマス・<br>
+        　バレンタインなど季節行事に合わせたイベントもある。
+      </p>
+      <dl id="item-area">
         <dt class="item-name">意識した点</dt>
-        <dd class="item">国内専門の会社という特徴から、
-          和の雰囲気を感じるカラーで統一。<br>
-          また探し方を４パターン提案することで、<br class="no-sp" aria-hidden="true">
-          お客様の目的や予定に合わせて調べやすくなるようにしました。
+        <dd class="item">
+          国内専門の会社という特徴から、和の雰囲気を感じる緑で統一しました。<br>
+          またプランの数が多く検索が複雑になりやすいため、<br>
+          探し方を「目的・ランキング・おすすめ・地図」の４パターンに分けて提案することで、<br>
+          お客様の目的や予定、好みに合わせて調べやすくなるようにしました。<br>
+          ロゴマークは身近に日本文化を感じてほしいというコンセプトから、<br>
+          主張しすぎない太さのフォントにし文字間を調節してまとまりを作り、<br>
+          馴染み深い印象のデザインにしました。
         </dd>
         <dt class="item-name">使用スキル</dt>
-        <dd class="item">HTML / CSS / JavaScript / Illustrator / Photoshop</dd>
+        <dd class="item">HTML/css/JavaScript/illustrator/Photoshop</dd>
         <dt class="item-name">URL</dt>
         <dd class="item">
-          <a href="./nihonsanpo/" target="_blank" rel="noopener noreferrer">日本散歩ウェブサイト <i class="fas fa-external-link-alt"></i></a>
+          <a href="./kadai1-02/index.html">日本散歩ウェブサイト</a>
         </dd>
       </dl>
-      <div id="mainvisual" class="works-thumbnails">
-        <img src="../img/lower-img/sanpo-comp02.jpg" alt="日本散歩サイトキャプチャ">
+      <div id="comp-area">
+        <div class="mainvisual-pc">
+          <img src="./img/sanpo-comp-pc.jpg" alt="">
+        </div>
+        <div class="mainvisual-sp">
+          <img src="./img/sanpo-comp-sp.jpg" alt="">
+        </div>
       </div>
     </main>
-  </div>
-</body>
+   </div>
+ </body>
 </html>
