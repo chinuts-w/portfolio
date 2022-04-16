@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/*____________________________
+common style
+____________________________*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
+
+a{
+  display: block;
+  color: #000;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #ff1493;
+}
+
+ul,
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+/*____________________________
+container style
+____________________________*/
+#container{
+  display: flex;
+}
+
+/*____________________________
+nav style
+____________________________*/
+.nav-area{
+  width: 4%;
+  height: fit-content;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.sch-area li+li{
+  border-top: solid 1px;
+  border-color: #808080;
+}
+
+.sch-area a{
+  color: #808080;
+  margin: 25px auto;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.sch-area a:hover{
+  text-decoration: none;
+  color: #ff1493;
+}
+
+/*____________________________
+main style
+____________________________*/
+.main-area{
+  width: 96%;
+}
+
+.headvisual img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/*______________________________
+
+contents-area style
+______________________________*/
+.contents-area{
+  display: flex;
+}
+
+/*______________________________
+
+article style
+______________________________*/
+h2{
+  font-size: 24px;
+  border-left: 10px solid;
+  padding-left: 10px;
+}
+
+#text-box{
+  width: 50%;
+  padding: 20px 30px 0;
+}
+
+.info-area{
+  margin-top: 20px;
+}
+
+/*______________________________
+
+img-area style
+______________________________*/
+.img-area{
+  width: 50%;
+  padding: 20px 0;
+}
+
+.img-area img{
+  height: 240px;
+  margin: 0  10px 0;
+}
+
+.img-area img+img{
+  margin: 10px 10px;
+}
+
+.img-area img:hover{
+  transform: scale(1.3);
+  transition:1s all;
+}
+
+
+/*____________________________
+footer style
+____________________________*/
+footer{
+  width: 100%;
+  height: 80px;
+  text-align:center;
+  padding-top: 28px;
+  background-color: #c0c0c0;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/*********____________________________
+ mobile style
+____________________________**********/
+@media screen and (max-width:480px) {
+  /*____________________________
+  nav style
+  ____________________________*/
+  .nav-area{
+    width: 10%;
+  }
+
+  /*____________________________
+  main style
+  ____________________________*/
+  .main-area{
+    width: 90%;
+    margin: 0;
+    right: 0;
+  }
+
+  /*______________________________
+
+  contents-area style
+  ______________________________*/
+  .contents-area{
+    display: block;
+  }
+
+  /*______________________________
+
+  article style
+  ______________________________*/
+  #text-box{
+    width: 90%;
+    right: 0;
+  }
+
+  /*______________________________
+
+  img-area style
+  ______________________________*/
+  .img-area{
+    width: 100%;
+    padding: 20px 0 20px 30px;
+  }
+
+  .img-area img{
+    height: 240px;
+    margin: 0 0 10px 10px;
+  }
+
+  .img-area img+img{
+    margin: 10px 10px;
+  }
+
+  .img-area img:hover{
+    transform: none;
+    transition: none;
+  }
+
+  /*____________________________
+  footer style
+  ____________________________*/
+  footer{
+    width: 100%;
+    height: 80px;
+    text-align:center;
+    padding-top: 28px;
+    background-color: #c0c0c0;
+    position: static;
+    bottom: none;
+  }
+  
+}
