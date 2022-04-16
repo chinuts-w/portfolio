@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/*____________________________
+common style
+____________________________*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
+
+a{
+  display: block;
+  color: #000;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #ff1493;
+}
+
+ul,
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+/*____________________________
+container style
+____________________________*/
+#container{
+  display: flex;
+}
+
+/*____________________________
+nav style
+____________________________*/
+.nav-area{
+  width: 4%;
+  height: fit-content;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.sch-area li+li{
+  border-top: solid 1px;
+  border-color: #808080;
+}
+
+.sch-area a{
+  color: #808080;
+  margin: 25px auto;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.sch-area a:hover{
+  text-decoration: none;
+  color: #ff1493;
+}
+
+/*____________________________
+
+main style
+____________________________*/
+.main-area{
+  width: 96%;
+}
+
+.headvisual img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/*______________________________
+
+otherlist style
+______________________________*/
+#otherlist-area{
+  padding: 50px 0 25px 50px;
+}
+
+h1{
+  border-bottom: solid;
+  padding: 0 0 10px;
+  width: 50%;
+}
+
+.otherlist{
+  margin-top: 50px;
+}
+
+/*______________________________
+
+listblock style
+______________________________*/
+.list-block{
+  display: flex;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+.cap-img{
+  width: 50%;
+}
+
+.cap-img img{
+  width: 100%;
+}
+
+h2{
+  font-size: 22px;
+  border-left: 10px solid;
+  padding-left: 10px;
+}
+
+.detail-area{
+  margin: 10px 0 0 10px;
+  width: 50%;
+}
+
+.detail-area dl{
+  display: flex;
+  width: 100%;
+}
+
+.detail-area dt{
+  color: #fff;
+  background-color: #000;
+  width: 10%;
+  height: fit-content;
+  text-align: center;
+  padding: 4px;
+}
+
+.detail-area dd{
+  padding: 0 0 0 10px;
+  width: 90%;
+}
+
+
+/*____________________________
+
+footer style
+____________________________*/
+footer{
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding-top: 28px;
+  background-color: #c0c0c0;
+}
+
+
+/*********____________________________
+
+ mobile style
+____________________________**********/
+@media screen and (max-width:480px) {
+  /*____________________________
+
+  nav style
+  ____________________________*/
+  .nav-area{
+    width: 10%;
+  }
+  
+  /*____________________________
+
+  main style
+  ____________________________*/
+  .main-area{
+    width: 90%;
+    margin: 0;
+  }
+
+  /*______________________________
+  
+  otherlist-area style
+  ______________________________*/
+  #otherlist-area{
+    padding: 20px 30px;
+  }
+
+  h1{
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .otherlist{
+    margin-top: 20px;
+  }
+
+  /*______________________________
+  
+  listblock style
+  ______________________________*/
+  .list-block{
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .cap-img{
+    width: 100%;
+  }
+  
+  h2{
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .detail-area{
+    width: 100%;
+    text-align: left;
+  }
+}
