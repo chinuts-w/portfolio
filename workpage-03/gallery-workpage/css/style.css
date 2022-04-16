@@ -145,14 +145,6 @@ ____________________________*********/
     width: 90%;
     margin: 0 auto;
     overflow: visible;
+    margin-bottom: 24px;
   }
-
-  /*____________________________
-  footer style
-  ____________________________*/
-  footer{
-    position: absolute;
-    bottom: 0;
-  }
-
 }
